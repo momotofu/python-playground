@@ -5,9 +5,25 @@ assert(len(a) == n)
 
 result = 0
 
-for i in range(0, n):
-    for j in range(i+1, n):
-        if a[i]*a[j] > result:
-            result = a[i]*a[j]
+def fastPairWise(list = []):
+    maxIndexOne = -1;
+    maxIndexTwo = -1;
+
+    # find greatest max index 1
+    for i in range(0, n):
+        if list[i] > maxIndexOne:
+            maxIndexOne = i
+
+    for j in range(0, n):
+        if list[j] != maxIndexOne && maxIndexTwo == -1 ||
+        list[j] > maxIndexTwo:
+            maxIndexTwo = j
+
+    return maxIndexOne * maxIndexTwo
+
+# for i in range(0, n):
+#    for j in range(i+1, n):
+#        if a[i]*a[j] > result:
+#            result = a[i]*a[j]
 
 print(result)
