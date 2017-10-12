@@ -1,9 +1,6 @@
-# Uses python3
 n = int(input())
 a = [int(x) for x in input().split()]
 assert(len(a) == n)
-
-result = 0
 
 def fastPairWise(list = []):
     maxIndexOne = -1;
@@ -11,19 +8,22 @@ def fastPairWise(list = []):
 
     # find greatest max index 1
     for i in range(0, n):
-        if list[i] > maxIndexOne:
+        if maxIndexOne == -1 or list[i] > list[maxIndexOne]:
             maxIndexOne = i
 
     for j in range(0, n):
-        if list[j] != maxIndexOne && maxIndexTwo == -1 ||
-        list[j] > maxIndexTwo:
+        if list[j] != list[maxIndexOne] and maxIndexTwo == -1 or list[j] > list[maxIndexTwo]:
             maxIndexTwo = j
 
-    return maxIndexOne * maxIndexTwo
+    return list[maxIndexOne] * list[maxIndexTwo]
 
-# for i in range(0, n):
-#    for j in range(i+1, n):
-#        if a[i]*a[j] > result:
-#            result = a[i]*a[j]
+def slowPairWise(list = []):
+    result = 0
+    for i in range(0, n):
+        for j in range(i+1, n):
+            if a[i]*a[j] > result:
+                result = a[i]*a[j]
+    return result
 
-print(result)
+print('fast result: ', fastPairWise(a), 'slow result: ', slowPairWise(a))
+
