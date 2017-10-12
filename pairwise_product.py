@@ -12,7 +12,7 @@ def fastPairWise(list = []):
             maxIndexOne = i
 
     for j in range(0, n):
-        if list[j] != list[maxIndexOne] and maxIndexTwo == -1 or list[j] > list[maxIndexTwo]:
+        if list[j] != list[maxIndexOne] and (maxIndexTwo == -1 or list[j] > list[maxIndexTwo]):
             maxIndexTwo = j
 
     return list[maxIndexOne] * list[maxIndexTwo]
