@@ -4,7 +4,7 @@ import time
 total_breaks = 3
 break_count = 0
 
-print("This program started on {0}".format(time.ctime())
+print("This program started on {0}".format(time.ctime()))
 
 while(break_count < total_breaks):
     time.sleep(1)
