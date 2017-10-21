@@ -32,6 +32,6 @@ def scramble_files():
 
     for file_name in file_list:
         random_num = random.randint(1, 1000)
-        os.rename(file_name, random_num + file_name)
+        os.rename(file_name, str(random_num) + file_name)
 
     os.chdir(working_dir)
