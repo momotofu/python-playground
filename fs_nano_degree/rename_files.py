@@ -1,4 +1,5 @@
 import os
+import random
 
 ## TODO:
 # Write a program that takes a secret message,
@@ -21,3 +22,16 @@ def rename_files():
         os.rename(file_name, file_name.translate(translation_table))
 
     os.chdir(current_directory)
+
+def scramble_files():
+    file_dir = "/Users/christopherreece/Documents/GitHub/Python/fs_nano_degree/secret_message"
+    file_list = os.listdir(file_dir)
+    working_dir = os.getcwd()
+
+    os.chdir(file_dir)
+
+    for file_name in file_list:
+        random_num = random.randint(1, 1000)
+        os.rename(file_name, random_num + file_name)
+
+    os.chdir(working_dir)
