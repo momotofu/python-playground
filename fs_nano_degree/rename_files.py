@@ -6,14 +6,13 @@ import random
 # And then arranges the pictures for you.
 # Then shuffles or encodes the message.
 
-def rename_files():
-    file_list = os.listdir("/Users/christopherreece/Documents/Github/Python/fs_nano_degree/prank")
+def rename_files(directory):
+    file_list = os.listdir(directory)
     current_directory = os.getcwd()
 
     # Create translation table
     translation_table = dict.fromkeys(map(ord, '0123456789'), None)
-
-    os.chdir("/Users/christopherreece/Documents/Github/Python/fs_nano_degree/prank")
+    os.chdir(directory)
 
     for file_name in file_list:
         new_name = file_name.translate(translation_table)
@@ -23,8 +22,8 @@ def rename_files():
 
     os.chdir(current_directory)
 
-def scramble_files():
-    file_dir = "/Users/christopherreece/Documents/GitHub/Python/fs_nano_degree/secret_message"
+def scramble_files(directory):
+    file_dir = directory
     file_list = os.listdir(file_dir)
     working_dir = os.getcwd()
 
