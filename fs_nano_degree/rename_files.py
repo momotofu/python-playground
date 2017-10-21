@@ -1,13 +1,18 @@
 import os
 
-print('login: ' + os.getlogin())
-print('pid: ' + str(os.getpid()))
+def rename_files():
+    file_list = os.listdir("/Users/christopherreece/Documents/Github/Python/fs_nano_degree/prank")
+    current_directory = os.getcwd()
 
-# def rename_files():
-#      (1) get file names from a folder
-#      file_list = os.listdir("/Users/christopherreece/Documents/Github/Python/fs_nano_degree/prank")
-#     print(file_list)
-#
-#      (2) for each file, rename filename
-#
-#  rename_files()
+    # Create translation table
+    translation_table = dict.fromkeys(map(ord, '0123456789'), None)
+
+    os.chdir("/Users/christopherreece/Documents/Github/Python/fs_nano_degree/prank")
+
+    for file_name in file_list:
+        new_name = file_name.translate(translation_table)
+        print('Old name: ' + file_name)
+        print('New name: ' + new_name)
+        os.rename(file_name, file_name.translate(translation_table))
+
+    os.chdir(current_directory)
