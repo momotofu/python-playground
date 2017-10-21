@@ -1,5 +1,10 @@
 import os
 
+## TODO:
+# Write a program that takes a secret message,
+# And then arranges the pictures for you.
+# Then shuffles or encodes the message.
+
 def rename_files():
     file_list = os.listdir("/Users/christopherreece/Documents/Github/Python/fs_nano_degree/prank")
     current_directory = os.getcwd()
