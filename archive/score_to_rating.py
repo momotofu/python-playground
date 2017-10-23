@@ -11,7 +11,7 @@ def sum_of_middle_three(n1, n2, n3, n4, n5):
     return reduce((lambda x, y: x + y), list)
 
 def score_to_rating_string(score):
-    """
+        """
     Takes a numerical input and maps its value to
     the correct rating. That rating is then returned.
     """
@@ -36,3 +36,5 @@ def scores_to_rating(n1, n2, n3, n4, n5):
 
     average = sum_of_middle_three(in1, in2, in3, in4, in5)/3
     return score_to_rating_string(average)
+
+print(scores_to_rating(10, 100, 40, 3, 2))
