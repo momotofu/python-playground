@@ -38,3 +38,5 @@ def scores_to_rating(n1, n2, n3, n4, n5):
     return score_to_rating_string(average)
 
 print(scores_to_rating(1, 1, 4, 3, 2))
+print(scores_to_rating(5, 5, 5, 5, 1))
+
