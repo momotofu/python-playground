@@ -43,7 +43,8 @@ def draw_tree(number_of_branches, amount, a_pos, b_pos, a_deg, b_deg):
         mi.forward(newAmount * 0.97)
         zu.forward(newAmount * 0.97)
 
-        return draw_tree(number_of_branches - 1, amount * 1.06, mi.pos(), zu.pos(), mi.heading(), zu.heading())
+        draw_tree(number_of_branches - 1, amount * 1.06, mi.pos(), zu.pos(), mi.heading(), zu.heading())
+        draw_tree(number_of_branches - 1, amount * 1.06, mi.pos().x - 1, zu.pos().x - 1, mi.heading(), zu.heading())
 
 window = open_window()
 draw_tree(200, 1, (0,0),(0, 0), 0, 0)
