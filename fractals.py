@@ -8,6 +8,8 @@ def open_window():
 
 def draw_tree(x, y, distance, degrees):
     stroke_color = "#ffd600"
+    newAmount = distance * 0.75 * 0.75
+
     # draw branch
     # reduce branch length
     # rotate and reduce branch size
@@ -15,14 +17,14 @@ def draw_tree(x, y, distance, degrees):
     main_branch = turtle.Turtle()
     main_branch.hideturtle()
     main_branch.color(stroke_color)
-    main_branch.speed(20)
+    main_branch.speed("fastest")
 
     # move to starting pos
     main_branch.penup()
     main_branch.setpos((x, y))
 
     # rotate main branch to last angle
-    main_branch.setheading(degrees + randint(10,30))
+    main_branch.setheading(degrees + 30)
 
     #draw main branch
     main_branch.pendown()
@@ -33,25 +35,25 @@ def draw_tree(x, y, distance, degrees):
     offshoot = turtle.Turtle()
     offshoot.hideturtle()
     offshoot.color(stroke_color)
-    offshoot.speed(20)
+    offshoot.speed("fastest")
 
     #move second branch to position of main_branch
     offshoot.penup()
     offshoot.pensize(main_branch.pensize())
-    offshoot.setheading(degrees + randint(10, 30))
+    offshoot.setheading(degrees + 30)
     offshoot.setpos(main_branch.pos())
 
     #draw second offshoot branch
     offshoot.pendown()
-    offshoot.right(randint(20,30))
+    offshoot.right(randint(15,30))
     offshoot.forward(distance * 0.40)
 
     #draw second main branch
-    main_branch.left(randint(20,30)
+    main_branch.left(randint(15, 30))
     main_branch.forward(distance * 0.40)
 
     #start recursive call
-    if (distance > 14):
+    if (distance > 20):
         #get coordinates
         main_b_co = main_branch.pos()
         off_b_co = offshoot.pos()
@@ -61,7 +63,6 @@ def draw_tree(x, y, distance, degrees):
         off_b_degrees = offshoot.heading()
 
         print('a:', main_b_degrees, " b: ", off_b_degrees)
-        newAmount = distance * 0.75 * 0.75
 
         #make recursive call
         draw_tree(main_b_co[0], main_b_co[1], newAmount, main_b_degrees)
@@ -69,6 +70,13 @@ def draw_tree(x, y, distance, degrees):
 
         draw_tree(main_b_co[0], main_b_co[1], newAmount, off_b_degrees)
         draw_tree(off_b_co[0], off_b_co[1], newAmount, 240 + main_b_degrees)
+
+        # randomly create a fith branch
+        if (randint(0,2) == 1):
+            draw_tree(main_b_co[0], main_b_co[1], newAmount / 2, main_b_degrees + 300)
+        elif (randint(0,2) == 0):
+            draw_tree(off_b_co[0], off_b_co[1], newAmount / 2, 300 + off_b_degrees)
+
     else:
         # set up leaf colors
         colors = ["#F9A825", "#FBC02D", "#FDD835", "#FF6F00", "#FFC107"]
