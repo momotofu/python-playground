@@ -1,4 +1,5 @@
 import turtle
+from random import randint
 
 def open_window():
     window = turtle.Screen()
@@ -25,7 +26,7 @@ def draw_tree(x, y, distance, degrees):
 
     #draw main branch
     main_branch.pendown()
-    main_branch.pensize(2 * distance * 0.1)
+    main_branch.pensize(2 * distance * 0.05)
     main_branch.forward(distance)
 
     # create second branch
@@ -43,14 +44,14 @@ def draw_tree(x, y, distance, degrees):
     #draw second offshoot branch
     offshoot.pendown()
     offshoot.right(30)
-    offshoot.forward(distance * 0.75)
+    offshoot.forward(distance * 0.40)
 
     #draw second main branch
     main_branch.left(30)
-    main_branch.forward(distance * 0.75)
+    main_branch.forward(distance * 0.40)
 
     #start recursive call
-    if (distance > 10):
+    if (distance > 14):
         #get coordinates
         main_b_co = main_branch.pos()
         off_b_co = offshoot.pos()
@@ -68,6 +69,20 @@ def draw_tree(x, y, distance, degrees):
 
         draw_tree(main_b_co[0], main_b_co[1], newAmount, off_b_degrees)
         draw_tree(off_b_co[0], off_b_co[1], newAmount, 240 + main_b_degrees)
+    else:
+        # set up leaf colors
+        colors = ["#F9A825", "#FBC02D", "#FDD835", "#FF6F00", "#FFC107"]
+        fill_color = colors[randint(0,4)]
+        main_branch.color(fill_color)
+        offshoot.color(fill_color)
+
+        main_branch.begin_fill()
+        main_branch.circle(2)
+        main_branch.end_fill()
+
+        offshoot.begin_fill()
+        offshoot.circle(3)
+        offshoot.end_fill()
 
 def draw_circle(x_pos, y_pos, radius):
     chris = turtle.Turtle()
@@ -87,6 +102,6 @@ def draw_circle(x_pos, y_pos, radius):
         draw_circle(x_pos + radius/2, y_pos + radius/2, radius/2)
 
 window = open_window()
-draw_tree(0, -180, 180, 60)
+draw_tree(0, -400, 250, 60)
 # draw_circle(0, 0, 160)
 window.exitonclick()
