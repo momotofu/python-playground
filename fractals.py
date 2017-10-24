@@ -43,9 +43,27 @@ def draw_tree(number_of_branches, amount, a_pos, b_pos, a_deg, b_deg):
         mi.forward(newAmount * 0.97)
         zu.forward(newAmount * 0.97)
 
-        draw_tree(number_of_branches - 1, amount * 1.06, mi.pos(), zu.pos(), mi.heading(), zu.heading())
-        draw_tree(number_of_branches - 1, amount * 1.06, mi.pos().x - 1, zu.pos().x - 1, mi.heading(), zu.heading())
+        print('mi pos:', mi.pos()[0], mi.pos()[1])
+        new_zu_pos = (zu.pos()[0] - 1, zu.pos()[1])
+        new_mi_pos = (mi.pos()[0] - 1, mi.pos()[1] - 1)
+        draw_tree(number_of_branches - 1, amount * 0.95, mi.pos(), zu.pos(), mi.heading(), zu.heading())
+        draw_tree(number_of_branches - 1, amount * 0.95, new_mi_pos, new_zu_pos, mi.heading(), zu.heading())
+
+draw_circle(x_pos, y_pos, radius):
+    chris = turtle.Turtle()
+    chris.color("green")
+    chris.speed(20)
+
+    chris.penup()
+    chris.setpos((x_pos, y_pos))
+    chris.pendown()
+    chris.circle(radius)
+
+    if (radius > 2):
+        draw_circle(x + radius/2, y, radius/2)
+        draw_circle(x - readius/2, y, radius/2)
 
 window = open_window()
-draw_tree(200, 1, (0,0),(0, 0), 0, 0)
+# draw_tree(200, 30, (0,0),(0, 0), 0, 0)
+draw_circle(0, 0, 160)
 window.exitonclick()
