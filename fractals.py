@@ -2,17 +2,18 @@ import turtle
 
 def open_window():
     window = turtle.Screen()
-    window.bgcolor("pink")
+    window.bgcolor("white")
     return window
 
 def draw_tree(x, y, distance, degrees):
+    stroke_color = "#ffd600"
     # draw branch
     # reduce branch length
     # rotate and reduce branch size
 
     main_branch = turtle.Turtle()
     main_branch.hideturtle()
-    main_branch.color("black")
+    main_branch.color(stroke_color)
     main_branch.speed(20)
 
     # move to starting pos
@@ -30,7 +31,7 @@ def draw_tree(x, y, distance, degrees):
     # create second branch
     offshoot = turtle.Turtle()
     offshoot.hideturtle()
-    offshoot.color("black")
+    offshoot.color(stroke_color)
     offshoot.speed(20)
 
     #move second branch to position of main_branch
