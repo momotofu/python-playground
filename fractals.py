@@ -19,7 +19,7 @@ def draw_tree(number_of_branches, amount, a_pos, b_pos, a_deg, b_deg):
         mi = turtle.Turtle()
         mi.penup()
         mi.color("green")
-        mi.speed(10)
+        mi.speed(1)
         mi.setpos(a_pos)
         mi.shapesize(0.5)
         mi.setheading(a_deg)
@@ -27,7 +27,7 @@ def draw_tree(number_of_branches, amount, a_pos, b_pos, a_deg, b_deg):
         zu = turtle.Turtle()
         zu.penup()
         zu.color("green")
-        zu.speed(10)
+        zu.speed(1)
         zu.shapesize(0.5)
         zu.setpos(b_pos)
         zu.setheading(b_deg)
@@ -39,7 +39,7 @@ def draw_tree(number_of_branches, amount, a_pos, b_pos, a_deg, b_deg):
         zu.setpos(mi.pos())
         # split
         mi.right(15)
-        zu.left(15)
+        zu.left(35)
         mi.forward(newAmount * 0.95)
         zu.forward(newAmount * 0.95)
 
