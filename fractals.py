@@ -40,7 +40,7 @@ def draw_tree(x, y, distance, degrees):
     #move second branch to position of main_branch
     offshoot.penup()
     offshoot.pensize(main_branch.pensize())
-    offshoot.setheading(degrees + 30)
+    offshoot.setheading(degrees + randint(-15, 15))
     offshoot.setpos(main_branch.pos())
 
     #draw second offshoot branch
@@ -53,7 +53,7 @@ def draw_tree(x, y, distance, degrees):
     main_branch.forward(distance * 0.40)
 
     #start recursive call
-    if (distance > 20):
+    if (distance > 26):
         #get coordinates
         main_b_co = main_branch.pos()
         off_b_co = offshoot.pos()
@@ -72,10 +72,11 @@ def draw_tree(x, y, distance, degrees):
         draw_tree(off_b_co[0], off_b_co[1], newAmount, 240 + main_b_degrees)
 
         # randomly create a fith branch
-        if (randint(0,2) == 1):
-            draw_tree(main_b_co[0], main_b_co[1], newAmount / 2, main_b_degrees + 300)
-        elif (randint(0,2) == 0):
-            draw_tree(off_b_co[0], off_b_co[1], newAmount / 2, 300 + off_b_degrees)
+        num = randint(0,1)
+        if (num == 1):
+            draw_tree(main_b_co[0], main_b_co[1], newAmount * 0.7, main_b_degrees + 300)
+        elif (num == 0):
+            draw_tree(off_b_co[0], off_b_co[1], newAmount * 0.7, 300 + off_b_degrees)
 
     else:
         # set up leaf colors
