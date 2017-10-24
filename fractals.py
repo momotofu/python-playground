@@ -5,52 +5,72 @@ def open_window():
     window.bgcolor("pink")
     return window
 
-def draw_tree(number_of_branches, amount, a_pos, b_pos, a_deg, b_deg):
-    newAmount = amount * 0.9
-    """
-    draw a line
-    then split into two
-    draw a line with a shorter distance
-    then split into two
-    """
-    if number_of_branches <= 0:
-        return
-    else:
-        mi = turtle.Turtle()
-        mi.penup()
-        mi.color("green")
-        mi.speed(20)
-        mi.setpos(a_pos)
-        mi.shapesize(0.5)
-        mi.setheading(a_deg)
+def draw_tree(x, y, distance, degrees):
+    # draw branch
+    # reduce branch length
+    # rotate and reduce branch size
 
-        zu = turtle.Turtle()
-        zu.penup()
-        zu.color("green")
-        zu.speed(20)
-        zu.shapesize(0.5)
-        zu.setpos(b_pos)
-        zu.setheading(b_deg)
+    main_branch = turtle.Turtle()
+    main_branch.hideturtle()
+    main_branch.color("black")
+    main_branch.speed(20)
 
-        # draw a line
-        mi.pendown()
-        zu.pendown()
-        mi.forward(newAmount)
-        zu.setpos(mi.pos())
-        # split
-        mi.right(35)
-        zu.left(30)
-        mi.forward(newAmount * 0.97)
-        zu.forward(newAmount * 0.97)
+    # move to starting pos
+    main_branch.penup()
+    main_branch.setpos((x, y))
 
-        print('mi pos:', mi.pos()[0], mi.pos()[1])
-        new_zu_pos = (zu.pos()[0] - 1, zu.pos()[1])
-        new_mi_pos = (mi.pos()[0] - 1, mi.pos()[1] - 1)
-        draw_tree(number_of_branches - 1, amount * 0.95, mi.pos(), zu.pos(), mi.heading(), zu.heading())
-        draw_tree(number_of_branches - 1, amount * 0.95, new_mi_pos, new_zu_pos, mi.heading(), zu.heading())
+    # rotate main branch to last angle
+    main_branch.setheading(degrees + 30)
 
-draw_circle(x_pos, y_pos, radius):
+    #draw main branch
+    main_branch.pendown()
+    main_branch.pensize(2 * distance * 0.1)
+    main_branch.forward(distance)
+
+    # create second branch
+    offshoot = turtle.Turtle()
+    offshoot.hideturtle()
+    offshoot.color("black")
+    offshoot.speed(20)
+
+    #move second branch to position of main_branch
+    offshoot.penup()
+    offshoot.pensize(main_branch.pensize())
+    offshoot.setheading(degrees + 30)
+    offshoot.setpos(main_branch.pos())
+
+    #draw second offshoot branch
+    offshoot.pendown()
+    offshoot.right(30)
+    offshoot.forward(distance * 0.75)
+
+    #draw second main branch
+    main_branch.left(30)
+    main_branch.forward(distance * 0.75)
+
+    #start recursive call
+    if (distance > 10):
+        #get coordinates
+        main_b_co = main_branch.pos()
+        off_b_co = offshoot.pos()
+
+        #get degrees
+        main_b_degrees = main_branch.heading()
+        off_b_degrees = offshoot.heading()
+
+        print('a:', main_b_degrees, " b: ", off_b_degrees)
+        newAmount = distance * 0.75 * 0.75
+
+        #make recursive call
+        draw_tree(main_b_co[0], main_b_co[1], newAmount, main_b_degrees)
+        draw_tree(off_b_co[0], off_b_co[1], newAmount, off_b_degrees)
+
+        draw_tree(main_b_co[0], main_b_co[1], newAmount, off_b_degrees)
+        draw_tree(off_b_co[0], off_b_co[1], newAmount, 240 + main_b_degrees)
+
+def draw_circle(x_pos, y_pos, radius):
     chris = turtle.Turtle()
+    chris.hideturtle()
     chris.color("green")
     chris.speed(20)
 
@@ -59,11 +79,13 @@ draw_circle(x_pos, y_pos, radius):
     chris.pendown()
     chris.circle(radius)
 
-    if (radius > 2):
-        draw_circle(x + radius/2, y, radius/2)
-        draw_circle(x - readius/2, y, radius/2)
+    if (radius > 8):
+        draw_circle(x_pos + radius /2, y_pos + radius/2, radius/2)
+        draw_circle(x_pos - radius /2, y_pos + radius/2, radius/2)
+        draw_circle(x_pos + radius/2, y_pos - radius/2, radius/2)
+        draw_circle(x_pos + radius/2, y_pos + radius/2, radius/2)
 
 window = open_window()
-# draw_tree(200, 30, (0,0),(0, 0), 0, 0)
-draw_circle(0, 0, 160)
+draw_tree(0, -180, 180, 60)
+# draw_circle(0, 0, 160)
 window.exitonclick()
