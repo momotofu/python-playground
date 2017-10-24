@@ -22,7 +22,7 @@ def draw_tree(x, y, distance, degrees):
     main_branch.setpos((x, y))
 
     # rotate main branch to last angle
-    main_branch.setheading(degrees + 30)
+    main_branch.setheading(degrees + randint(10,30))
 
     #draw main branch
     main_branch.pendown()
@@ -38,16 +38,16 @@ def draw_tree(x, y, distance, degrees):
     #move second branch to position of main_branch
     offshoot.penup()
     offshoot.pensize(main_branch.pensize())
-    offshoot.setheading(degrees + 30)
+    offshoot.setheading(degrees + randint(10, 30))
     offshoot.setpos(main_branch.pos())
 
     #draw second offshoot branch
     offshoot.pendown()
-    offshoot.right(30)
+    offshoot.right(randint(20,30))
     offshoot.forward(distance * 0.40)
 
     #draw second main branch
-    main_branch.left(30)
+    main_branch.left(randint(20,30)
     main_branch.forward(distance * 0.40)
 
     #start recursive call
