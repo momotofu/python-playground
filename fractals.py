@@ -76,6 +76,7 @@ def draw_tree(x, y, distance, degrees):
         if (num == 1):
             draw_tree(main_b_co[0], main_b_co[1], newAmount * 0.7, main_b_degrees + 300)
         elif (num == 0):
+            draw_tree(off_b_co[0], off_b_co[1], newAmount * 0.9, 100 + off_b_degrees)
             draw_tree(off_b_co[0], off_b_co[1], newAmount * 0.7, 300 + off_b_degrees)
 
     else:
