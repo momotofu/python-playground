@@ -1,5 +1,5 @@
 
-m twilio.rest import Client
+import twilio.rest import Client
 
 # Your Account SID from twilio.com/console
 account_sid = "ACb6ed0a80b9b770fc7d11ee41341a65c2"
