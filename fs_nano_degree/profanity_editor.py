@@ -8,4 +8,4 @@ def check_profanity(text_to_check):
     has_profanity = urllib.urlopen("http://www.wdyl.com/profanity?q="+text_to_check)
     return has_profanity
 
-read_text()
+check_profanity(read_text())
