@@ -15,6 +15,11 @@ def check_profanity(text_to_check):
     connection.close()
     return is_profane
 
+def print_response(input):
+    if input:
+        print("Oh no! There is something profane in your text!")
+    else:
+        print("All clear. Nothing profane!")
 content = read_text()
-print(check_profanity(content))
+print_response(check_profanity(content))
 # check_profanity(read_text())
