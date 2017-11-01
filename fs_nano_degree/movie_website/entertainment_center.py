@@ -35,7 +35,10 @@ jago = media.Movie("Jago: A Life Underwater",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMzExOTAxODc4OF5BMl5BanBnXkFtZTgwNTczMjE0NzE@._V1_SY1000_CR0,0,699,1000_AL_.jpg",
         "https://www.youtube.com/watch?v=rVVI3Ta--No")
 
-
+sound_of_music = media.Movie("Sound of Music",
+        "A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.",
+        "http://loyd-theater.com/movie-collect-1/20th/sound-of-music/sound-dvd.jpg",
+        "https://www.youtube.com/watch?v=5fH2FOn1V5g")
 
 
 movies_list = [planet_earth, avatar, toy_story]
