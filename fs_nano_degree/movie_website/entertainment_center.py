@@ -55,7 +55,15 @@ the_karate_kid = media.Movie("The Karate Kid",
         "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiD-9Gu7JrXAhUIwrwKHYKPD5UQjRwIBw&url=http%3A%2F%2Fthegalileo.co.za%2Fmovies%2Fthe-karate-kid%2F&psig=AOvVaw2n7rz7VPM-_RYmCa8Fj7l7&ust=1509538738531661",
         "https://www.youtube.com/watch?v=n7JhKCQnEqQ")
 
+the_last_samurai = media.Movie("The Last Samurai",
+        "An American military advisor embraces the Samurai culture he was hired to destroy after he is captured in battle.",
+        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjEuvC4tZzXAhWp0FQKHRlpAXUQjRwIBw&url=http%3A%2F%2Fwww.rogerebert.com%2Freviews%2Fthe-last-samurai-2003&psig=AOvVaw1ayLoXQSN2Flh7ih9t1ref&ust=1509592769540546",
+        "https://www.youtube.com/watch?v=T50_qHEOahQ")
 
+samurai_jack = media.Movie("Samurai Jack",
+        "A samurai warrior fights against the evil entity that took him away from his home world.",
+        "http://www.filmandtvnow.com/wp-content/uploads/2016/07/samurai-jack-returns-2016.jpg",
+        "https://www.youtube.com/watch?v=VSrv_n4tw7w")
 
 movies_list = [planet_earth, avatar, toy_story]
 
