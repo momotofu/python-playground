@@ -7,12 +7,12 @@ planet_earth = media.Movie("Planet Earth", "A visual journey covering the wonder
 
 prince_of_egypt = media.Movie("Prince of Egypt",
         "An Egyptian prince learns of his identity as a Hebrew and his destiny to become the chosen deliverer of his people.",
-        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj_56vl4ZrXAhUEe7wKHdhxA4sQjRwIBw&url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0120794%2F&psig=AOvVaw2ed_BR4H7FTp1ZEF85b1g8&ust=1509533146821359",
+        "https://images-na.ssl-images-amazon.com/images/M/MV5BOWNjMjgyNmMtNWMzZC00YjI4LWI1NmUtMTY0ZTA0ZDQ4Y2EwXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_.jpg",
         "https://www.youtube.com/watch?v=zmBDY-fSlIs")
 
 natural_curiosities = media.Movie("Natural Curiosities",
         "David Attenborough presents a collection of his favourite natural curiosities found throughout the animal kingdom from armoured giants to crafty insects.",
-        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj0v5Sg5JrXAhWIS7wKHXNsAKEQjRwIBw&url=https%3A%2F%2Fwww.themoviedb.org%2Ftv%2F58703-david-attenborough-s-natural-curiosities%2Fimages%2Fposters&psig=AOvVaw1QF8qvQMVBqheUSTy5w19m&ust=1509536615644068",
+        "https://image.tmdb.org/t/p/original/cd7eNiMyxHCRTdCYBTPAEQF7Ec3.jpg",
         "https://www.youtube.com/watch?v=gNpJGAIo-YU")
 
 patterns_of_evidence = media.Movie("Patterns of Evidence",
@@ -65,6 +65,18 @@ samurai_jack = media.Movie("Samurai Jack",
         "http://www.filmandtvnow.com/wp-content/uploads/2016/07/samurai-jack-returns-2016.jpg",
         "https://www.youtube.com/watch?v=VSrv_n4tw7w")
 
-movies_list = [planet_earth, avatar, toy_story]
+big_hero_six = media.Movie("Big Hero Six",
+        "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
+        "https://a.dilcdn.com/bl/wp-content/uploads/sites/25/2014/06/Disney_BigHero6_Poster_Baymax.jpg",
+        "https://www.youtube.com/watch?v=rD5OA6sQ97M")
+
+the_great_dictator = media.Movie("The Great Dictator",
+        "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
+        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiOuseavJzXAhWBm5QKHTTyBhMQjRwIBw&url=https%3A%2F%2Fwww.rogerebert.com%2Freviews%2Fgreat-movie-the-great-dictator-1940&psig=AOvVaw2GgjdBeztRlcdako3OdgSB&ust=1509594564471644",
+        "https://www.youtube.com/watch?v=4sfJxdytYn4")
+
+movies_list = [planet_earth, prince_of_egypt, natural_curiosities, patterns_of_evidence, indie_game,
+        batman_begins, jago, sound_of_music, the_grand_budapest_hotel, the_matrix, the_karate_kid,
+        the_last_samurai, samurai_jack, big_hero_six, the_great_dictator]
 
 fresh_tomatoes.open_movies_page(movies_list)
