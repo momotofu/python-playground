@@ -20,6 +20,11 @@ patterns_of_evidence = media.Movie("Patterns of Evidence",
         "https://s-media-cache-ak0.pinimg.com/originals/8d/14/38/8d14381ea548684ba7fef6c218912afc.jpg",
         "https://www.youtube.com/watch?v=2assFIyLInE")
 
+indie_game = media.Movie("Indie Game",
+        "A documentary that follows the journeys of indie game developers as they create games and release those works, and themselves, to the world.",
+        "http://www.indiegamethemovie.com/storage/post-images/2011-posts/nov-2011/POSTER_SD_PIXEL.jpg?__SQUARESPACE_CACHEVERSION=1322687529780",
+        "https://www.youtube.com/watch?v=GhaT78i1x2M")
+
 
 
 movies_list = [planet_earth, avatar, toy_story]
