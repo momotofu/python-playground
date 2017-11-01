@@ -30,6 +30,11 @@ batman_begins = media.Movie("Batman Begins",
         "https://s-media-cache-ak0.pinimg.com/originals/21/d6/39/21d6398a3369280670857c4021aef42b.jpg",
         "https://www.youtube.com/watch?v=vak9ZLfhGnQ")
 
+jago = media.Movie("Jago: A Life Underwater",
+        "An award-winning documentary about Rohani, an 80-year-old hunter who dives on a single breath descending to great depths for several minutes. Set against the spectacular backdrop of the Togian Islands of Indonesia.",
+        "https://images-na.ssl-images-amazon.com/images/M/MV5BMzExOTAxODc4OF5BMl5BanBnXkFtZTgwNTczMjE0NzE@._V1_SY1000_CR0,0,699,1000_AL_.jpg",
+        "https://www.youtube.com/watch?v=rVVI3Ta--No")
+
 
 
 
