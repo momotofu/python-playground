@@ -45,6 +45,11 @@ the_grand_budapest_hotel = media.Movie("The Grand Budapest Hotel",
         "https://s-media-cache-ak0.pinimg.com/originals/48/08/cd/4808cde63ff708572be687970f979cfe.jpg",
         "https://www.youtube.com/watch?v=1Fg5iWmQjwk")
 
+the_matrix = media.Movie("The Matrix",
+        "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+        "https://images-na.ssl-images-amazon.com/images/I/51EG732BV3L.jpg",
+        "https://www.youtube.com/watch?v=m8e-FF8MsqU")
+
 
 movies_list = [planet_earth, avatar, toy_story]
 
