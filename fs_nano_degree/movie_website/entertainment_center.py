@@ -57,7 +57,7 @@ the_karate_kid = media.Movie("The Karate Kid",
 
 the_last_samurai = media.Movie("The Last Samurai",
         "An American military advisor embraces the Samurai culture he was hired to destroy after he is captured in battle.",
-        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjEuvC4tZzXAhWp0FQKHRlpAXUQjRwIBw&url=http%3A%2F%2Fwww.rogerebert.com%2Freviews%2Fthe-last-samurai-2003&psig=AOvVaw1ayLoXQSN2Flh7ih9t1ref&ust=1509592769540546",
+        "https://static.rogerebert.com/uploads/movie/movie_poster/the-last-samurai-2003/large_cRz4FRx731ulws6zHuQVaDXpx73.jpg",
         "https://www.youtube.com/watch?v=T50_qHEOahQ")
 
 samurai_jack = media.Movie("Samurai Jack",
