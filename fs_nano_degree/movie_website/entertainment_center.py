@@ -13,7 +13,7 @@ prince_of_egypt = media.Movie("Prince of Egypt",
 natural_curiosities = media.Movie("Natural Curiosities",
         "David Attenborough presents a collection of his favourite natural curiosities found throughout the animal kingdom from armoured giants to crafty insects.",
         "https://image.tmdb.org/t/p/original/cd7eNiMyxHCRTdCYBTPAEQF7Ec3.jpg",
-        "https://www.youtube.com/watch?v=gNpJGAIo-YU")
+        "https://www.youtube.com/watch?v=hsHtu03G0e0")
 
 patterns_of_evidence = media.Movie("Patterns of Evidence",
         "What is the validity of history found in the Bible? Is it fact or fiction? What does the hard evidence really have to say about the foundational story of the Old Testament: the Exodus...",
