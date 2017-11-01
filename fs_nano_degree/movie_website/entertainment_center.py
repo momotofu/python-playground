@@ -50,6 +50,12 @@ the_matrix = media.Movie("The Matrix",
         "https://images-na.ssl-images-amazon.com/images/I/51EG732BV3L.jpg",
         "https://www.youtube.com/watch?v=m8e-FF8MsqU")
 
+the_karate_kid = media.Movie("The Karate Kid",
+        "A martial arts master agrees to teach karate to a bullied teenager.",
+        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiD-9Gu7JrXAhUIwrwKHYKPD5UQjRwIBw&url=http%3A%2F%2Fthegalileo.co.za%2Fmovies%2Fthe-karate-kid%2F&psig=AOvVaw2n7rz7VPM-_RYmCa8Fj7l7&ust=1509538738531661",
+        "https://www.youtube.com/watch?v=n7JhKCQnEqQ")
+
+
 
 movies_list = [planet_earth, avatar, toy_story]
 
