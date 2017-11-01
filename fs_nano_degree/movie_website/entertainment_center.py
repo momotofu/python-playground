@@ -39,6 +39,7 @@ sound_of_music = media.Movie("Sound of Music",
         "A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.",
         "http://loyd-theater.com/movie-collect-1/20th/sound-of-music/sound-dvd.jpg",
         "https://www.youtube.com/watch?v=TRPEpJHI9zg")
+
 the_grand_budapest_hotel = media.Movie("The Grand Budapest Hotel",
         "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
         "https://s-media-cache-ak0.pinimg.com/originals/48/08/cd/4808cde63ff708572be687970f979cfe.jpg",
@@ -74,8 +75,6 @@ the_great_dictator = media.Movie("The Great Dictator",
         "https://static.rogerebert.com/uploads/movie/movie_poster/the-great-dictator-1940/large_i9rN9JPbTHplRa9OLEwcymUAKvb.jpg",
         "https://www.youtube.com/watch?v=4sfJxdytYn4")
 
-movies_list = [planet_earth, prince_of_egypt, natural_curiosities, patterns_of_evidence, indie_game,
-        batman_begins, jago, sound_of_music, the_grand_budapest_hotel, the_matrix, the_karate_kid,
-        the_last_samurai, samurai_jack, big_hero_six, the_great_dictator]
+movies_list = [the_matrix, the_karate_kid, batman_begins, planet_earth, prince_of_egypt, samurai_jack, patterns_of_evidence, indie_game, natural_curiosities, jago, sound_of_music, the_grand_budapest_hotel, the_last_samurai, big_hero_six, the_great_dictator]
 
 fresh_tomatoes.open_movies_page(movies_list)
