@@ -25,6 +25,12 @@ indie_game = media.Movie("Indie Game",
         "http://www.indiegamethemovie.com/storage/post-images/2011-posts/nov-2011/POSTER_SD_PIXEL.jpg?__SQUARESPACE_CACHEVERSION=1322687529780",
         "https://www.youtube.com/watch?v=GhaT78i1x2M")
 
+batman_begins = media.Movie("Batman Begins",
+        "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it.",
+        "https://s-media-cache-ak0.pinimg.com/originals/21/d6/39/21d6398a3369280670857c4021aef42b.jpg",
+        "https://www.youtube.com/watch?v=vak9ZLfhGnQ")
+
+
 
 
 movies_list = [planet_earth, avatar, toy_story]
