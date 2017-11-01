@@ -1,6 +1,10 @@
 import webbrowser
 
 class Movie():
+    """
+    provides a way to store movie related information
+    """
+
     # class variable
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
 

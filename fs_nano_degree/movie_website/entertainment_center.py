@@ -78,4 +78,5 @@ the_great_dictator = media.Movie("The Great Dictator",
 movies_list = [the_matrix, indie_game, the_karate_kid, the_grand_budapest_hotel, batman_begins, planet_earth, samurai_jack, big_hero_six, the_great_dictator, patterns_of_evidence, natural_curiosities, jago, sound_of_music, the_last_samurai, prince_of_egypt]
 
 # fresh_tomatoes.open_movies_page(movies_list)
-print(media.Movie.VALID_RATINGS)
+# print(media.Movie.VALID_RATINGS)
+print(media.Movie.__doc__)
