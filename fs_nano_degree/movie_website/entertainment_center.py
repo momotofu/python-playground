@@ -10,6 +10,16 @@ prince_of_egypt = media.Movie("Prince of Egypt",
         "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj_56vl4ZrXAhUEe7wKHdhxA4sQjRwIBw&url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0120794%2F&psig=AOvVaw2ed_BR4H7FTp1ZEF85b1g8&ust=1509533146821359",
         "https://www.youtube.com/watch?v=zmBDY-fSlIs")
 
+natural_curiosities = media.Movie("Natural Curiosities",
+        "David Attenborough presents a collection of his favourite natural curiosities found throughout the animal kingdom from armoured giants to crafty insects.",
+        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj0v5Sg5JrXAhWIS7wKHXNsAKEQjRwIBw&url=https%3A%2F%2Fwww.themoviedb.org%2Ftv%2F58703-david-attenborough-s-natural-curiosities%2Fimages%2Fposters&psig=AOvVaw1QF8qvQMVBqheUSTy5w19m&ust=1509536615644068",
+        "https://www.youtube.com/watch?v=gNpJGAIo-YU")
+
+patterns_of_evidence = media.Movie("Patterns of Evidence",
+        "What is the validity of history found in the Bible? Is it fact or fiction? What does the hard evidence really have to say about the foundational story of the Old Testament: the Exodus...",
+        "https://s-media-cache-ak0.pinimg.com/originals/8d/14/38/8d14381ea548684ba7fef6c218912afc.jpg",
+        "https://www.youtube.com/watch?v=2assFIyLInE")
+
 
 
 movies_list = [planet_earth, avatar, toy_story]
