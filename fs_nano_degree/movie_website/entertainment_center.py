@@ -72,7 +72,7 @@ big_hero_six = media.Movie("Big Hero Six",
 
 the_great_dictator = media.Movie("The Great Dictator",
         "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
-        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiOuseavJzXAhWBm5QKHTTyBhMQjRwIBw&url=https%3A%2F%2Fwww.rogerebert.com%2Freviews%2Fgreat-movie-the-great-dictator-1940&psig=AOvVaw2GgjdBeztRlcdako3OdgSB&ust=1509594564471644",
+        "https://static.rogerebert.com/uploads/movie/movie_poster/the-great-dictator-1940/large_i9rN9JPbTHplRa9OLEwcymUAKvb.jpg",
         "https://www.youtube.com/watch?v=4sfJxdytYn4")
 
 movies_list = [planet_earth, prince_of_egypt, natural_curiosities, patterns_of_evidence, indie_game,
