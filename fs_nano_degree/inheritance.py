@@ -1,4 +1,4 @@
-class Parent():
+class Parent(object):
     def __init__(self, last_name, eye_color):
         print("Parent constructor called")
         self.last_name = last_name
@@ -15,6 +15,7 @@ class Child(Parent):
         self.number_of_toys = number_of_toys
 
     def show_info(self):
+        super(Child, self).show_info()
         print("Number of toys - "+self.number_of_toys)
 
 king_david = Parent("David", "blue")
