@@ -52,7 +52,7 @@ the_matrix = media.Movie("The Matrix",
 
 the_karate_kid = media.Movie("The Karate Kid",
         "A martial arts master agrees to teach karate to a bullied teenager.",
-        "https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiD-9Gu7JrXAhUIwrwKHYKPD5UQjRwIBw&url=http%3A%2F%2Fthegalileo.co.za%2Fmovies%2Fthe-karate-kid%2F&psig=AOvVaw2n7rz7VPM-_RYmCa8Fj7l7&ust=1509538738531661",
+        "http://thegalileo.co.za/wp-content/uploads/2015/09/a1r6Azn2WfeXAx9p2TKXOpOaGlx.jpg",
         "https://www.youtube.com/watch?v=n7JhKCQnEqQ")
 
 the_last_samurai = media.Movie("The Last Samurai",
