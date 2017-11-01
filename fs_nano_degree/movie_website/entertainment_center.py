@@ -40,6 +40,11 @@ sound_of_music = media.Movie("Sound of Music",
         "http://loyd-theater.com/movie-collect-1/20th/sound-of-music/sound-dvd.jpg",
         "https://www.youtube.com/watch?v=5fH2FOn1V5g")
 
+the_grand_budapest_hotel = media.Movie("The Grand Budapest Hotel",
+        "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
+        "https://s-media-cache-ak0.pinimg.com/originals/48/08/cd/4808cde63ff708572be687970f979cfe.jpg",
+        "https://www.youtube.com/watch?v=1Fg5iWmQjwk")
+
 
 movies_list = [planet_earth, avatar, toy_story]
 
