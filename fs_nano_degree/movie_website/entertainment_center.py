@@ -40,7 +40,7 @@ sound_of_music = media.Movie("Sound of Music",
         "http://loyd-theater.com/movie-collect-1/20th/sound-of-music/sound-dvd.jpg",
         "https://www.youtube.com/watch?v=TRPEpJHI9zg")
 
-the_grand_budapest_hotel = media.Movie("The Grand Budapest Hotel",
+the_grand_budapest_hotel = media.Movie("The Grand Budapest",
         "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
         "https://s-media-cache-ak0.pinimg.com/originals/48/08/cd/4808cde63ff708572be687970f979cfe.jpg",
         "https://www.youtube.com/watch?v=1Fg5iWmQjwk")
@@ -75,6 +75,6 @@ the_great_dictator = media.Movie("The Great Dictator",
         "https://static.rogerebert.com/uploads/movie/movie_poster/the-great-dictator-1940/large_i9rN9JPbTHplRa9OLEwcymUAKvb.jpg",
         "https://www.youtube.com/watch?v=4sfJxdytYn4")
 
-movies_list = [the_matrix, the_karate_kid, batman_begins, planet_earth, prince_of_egypt, samurai_jack, patterns_of_evidence, indie_game, natural_curiosities, jago, sound_of_music, the_grand_budapest_hotel, the_last_samurai, big_hero_six, the_great_dictator]
+movies_list = [the_matrix, indie_game, the_karate_kid, the_grand_budapest_hotel, batman_begins, planet_earth, samurai_jack, big_hero_six, the_great_dictator, patterns_of_evidence, natural_curiosities, jago, sound_of_music, the_last_samurai, prince_of_egypt]
 
 fresh_tomatoes.open_movies_page(movies_list)
