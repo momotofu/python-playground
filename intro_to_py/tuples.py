@@ -10,3 +10,4 @@ def first_and_last(sequence):
     return sequence[0], sequence[-1]
 
 print(first_and_last((a, b, c, d, e, f, g)))
+Hello World!
