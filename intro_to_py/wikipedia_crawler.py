@@ -39,3 +39,5 @@ def find_first_link(url):
 
     return first_link
 
+def continue_crawl(search_history, target_url, max_steps=25):
+
