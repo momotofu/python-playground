@@ -35,7 +35,7 @@ def find_first_link(url):
         return
 
     # build a full url from the relative article_link url
-    first_link = urllib.pars.urljoin('https://en.wikipedia.org/', article_link)
+    first_link = urllib.parse.urljoin('https://en.wikipedia.org/', article_link)
 
     return first_link
 
