@@ -41,7 +41,7 @@ def find_first_link(url):
 
 def continue_crawl(search_history, target_url, max_steps=25):
     if search_history[-1] == target_url:
-        print("We've found the target article!")
+        print("We've found the target article: {0}".format(target_url))
         return False
     elif len(search_history) > max_steps:
         print("The search has gone on suspiciously long, aborting search!")
