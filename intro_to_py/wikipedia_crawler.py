@@ -18,3 +18,10 @@ def find_first_link(url):
 
     # stores the first link found in the article, if the article contains no
     # links this value will ramain None
+    article_link = None
+
+    # Find all the direct children of content_div that are paragraphs
+    for elm in content_div.find_all("p", recursive=False):
+        # Find the first anchor tag that's a direct child of a paragraph
+        # It's important to only look at direct children, because other types:w
+
