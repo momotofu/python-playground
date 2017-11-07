@@ -30,3 +30,12 @@ def find_first_link(url):
         if elm.find("a", recursive=False):
             article_link = elm.find("a", recursive=False).get('href')
             break
+
+    if not article_link:
+        return
+
+    # build a full url from the relative article_link url
+    first_link = urllib.pars.urljoin('https://en.wikipedia.org/', article_link)
+
+    return first_link
+
