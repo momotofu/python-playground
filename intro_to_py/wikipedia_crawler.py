@@ -27,4 +27,6 @@ def find_first_link(url):
         # of links, i.e. footnotes and pronunciation, could come before the
         # first link to an article. Those other link types aren't direct
         # children though, they're in divs of various classes.
-
+        if elm.find("a", recursive=False):
+            article_link = elm.find("a", recursive=False).get('href')
+            break
