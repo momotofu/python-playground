@@ -40,4 +40,23 @@ def find_first_link(url):
     return first_link
 
 def continue_crawl(search_history, target_url, max_steps=25):
+    if search_history[-1] == target_url:
+        print("We've found the target article!")
+        return False
+    elif len(search_history) > max_steps:
+        print("The search has gone on suspiciously long, aborting search!")
+        return False
+    elif search_history[-1] in search_history[:-1]:
+        print("We've arrived at an article we've already seen, aborting search!")
+        return False
+    else:
+        return True
 
+article_chain = [start_url]
+
+while continue_crawl(article_chain, target_url):
+    print(article_chain[-1])
+
+    first_link = find_first_link(article_chain[-1])
+    if not first_link:
+        print("We've arrived at an article with no links, aborting search")
