@@ -60,3 +60,8 @@ while continue_crawl(article_chain, target_url):
     first_link = find_first_link(article_chain[-1])
     if not first_link:
         print("We've arrived at an article with no links, aborting search")
+        break
+
+    article_chain.append(first_link)
+
+    time.sleep(2) # Slow things down so as to not hammer Wikipedia's servers
