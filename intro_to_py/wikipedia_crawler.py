@@ -23,5 +23,8 @@ def find_first_link(url):
     # Find all the direct children of content_div that are paragraphs
     for elm in content_div.find_all("p", recursive=False):
         # Find the first anchor tag that's a direct child of a paragraph
-        # It's important to only look at direct children, because other types:w
+        # It's important to only look at direct children, because other types
+        # of links, i.e. footnotes and pronunciation, could come before the
+        # first link to an article. Those other link types aren't direct
+        # children though, they're in divs of various classes.
 
