@@ -54,7 +54,7 @@ def continue_crawl(search_history, target_url, max_steps=25):
 
 article_chain = [start_url]
 
-while continue_crawl(article_chain, target_url):
+while continue_crawl(article_chain, target_url, 1000):
     print(article_chain[-1])
 
     first_link = find_first_link(article_chain[-1])
