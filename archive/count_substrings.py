@@ -28,8 +28,20 @@ string = """aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaos
 
 substring = 'ab'
 
-print 'a'
-test_func_speed(count_substring_a(string, substring))
+# print 'a n * 1'
+# test_func_speed(count_substring_a(string, substring))
+#
+# print 'b n * 1'
+# test_func_speed(count_substring_b(string, substring))
 
-print 'b'
-test_func_speed(count_substring_b(string, substring))
+# print 'a n * 2'
+# test_func_speed(count_substring_a(string*2, substring))
+#
+# print 'b n * 2'
+# test_func_speed(count_substring_b(string*2, substring))
+
+print 'a n * 3'
+test_func_speed(count_substring_a(string*3, substring))
+
+print 'b n * 3'
+test_func_speed(count_substring_b(string*3, substring))
