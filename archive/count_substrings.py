@@ -27,5 +27,9 @@ string = 'aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj'
         +'aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj'
 
 substring = 'ab'
+
 print 'a'
-test_func_speed(count_substing_a(
+test_func_speed(count_substring_a(string, substring))
+
+print 'b'
+test_func_speed(count_substring_b(string, substring))
