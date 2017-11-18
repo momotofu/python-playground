@@ -19,12 +19,12 @@ def count_substring_b(string, sub_string):
     return sum
 
 def count_substring_a(string, substring):
-    return sum([ 1 for _ in range(len(string)-len(substring)+1) if string[i:i+len(substring)] == substring]))
+    return sum([ 1 for i in range(len(string)-len(substring)+1) if string[i:i+len(substring)] == substring])
 
-string = 'aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj'
-        +'aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj'
-        +'aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj'
-        +'aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj'
+string = """aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaos
+        aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj
+        aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj
+        aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj"""
 
 substring = 'ab'
 
