@@ -1,5 +1,8 @@
 import datetime
-start = datetime.datetime.now()
-// do stuff
-finish = datetime.datetime.now()
-print finish-start
+
+def test_func_speed(func):
+    start = datetime.datetime.now()
+
+    finish = datetime.datetime.now()
+    print finish - start
+
