@@ -26,6 +26,8 @@ string = """aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaos
         aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj
         aabsabasdbabbasdbadifjaasdaboibaijdaodiabjabasdibaosidjbaosdibj"""
 
+# open a huge file and read in text
+# huge_string
 substring = 'ab'
 
 # print 'a n * 1'
