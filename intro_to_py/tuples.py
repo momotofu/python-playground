@@ -5,9 +5,11 @@ a, b, c, d, e, f, g = dimensions
 # print('The dimensions are: {} : {} : {} : {} : {} : {} : {}'.format(a, b, c, d, e, f, g))
 
 # Can use tuples as keys for a dict
-
 def first_and_last(sequence):
     return sequence[0], sequence[-1]
+
+def error():
+    pass
 
 print(first_and_last((a, b, c, d, e, f, g)))
 Hello World!
